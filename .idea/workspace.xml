@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7b76414-0604-4b12-b3d3-635b8a0c6974" name="Changes" comment="add code in pom.xml">
-      <change afterPath="$PROJECT_DIR$/src/test/java/readProperties/ConfigProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.conf" afterDir="false" />
+    <list default="true" id="f7b76414-0604-4b12-b3d3-635b8a0c6974" name="Changes" comment="add interface config">
+      <change afterPath="$PROJECT_DIR$/src/test/java/core/BaseSeleniumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/core/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpDesk/HelpDeskTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpDesk/TicketsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/StringModifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,6 +44,34 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="core" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelpDeskTest.checkTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="helpDeskTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="helpDesk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="helpDesk" />
+      <option name="MAIN_CLASS_NAME" value="helpDesk.HelpDeskTest" />
+      <option name="METHOD_NAME" value="checkTicket" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HelpDeskTest.checkTicket" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +95,28 @@
       <option name="project" value="LOCAL" />
       <updated>1659598110319</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add code workspace.xml">
+      <created>1659598642241</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659598642241</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add config">
+      <created>1659598656623</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659598656623</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add interface config">
+      <created>1659598682190</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659598682190</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,6 +133,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new auto test" />
     <MESSAGE value="add code in pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add code in pom.xml" />
+    <MESSAGE value="add code workspace.xml" />
+    <MESSAGE value="add config" />
+    <MESSAGE value="add interface config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add interface config" />
   </component>
 </project>
