@@ -9,8 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.Objects;
 
 public class TicketsPage extends BaseSeleniumPage {
+    
     @FindBy(id = "search_query")
     private WebElement searchField;
+    
     @FindBy(xpath = "div[@class='tickettitle']")
     private WebElement ticket;
 
