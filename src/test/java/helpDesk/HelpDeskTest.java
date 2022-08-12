@@ -8,7 +8,6 @@ import readProperties.ConfigProvider;
 
 import static helpers.StringModifier.getUniqueString;
 
-
 public class HelpDeskTest extends BaseSeleniumTest {
 
     @Test
