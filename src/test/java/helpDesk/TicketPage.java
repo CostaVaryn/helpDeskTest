@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class TicketPage extends BaseSeleniumPage {
+    
     @FindBy(xpath = "//th[text()='Submitter E-Mail']/following::td[1]")
     private WebElement email;
 
