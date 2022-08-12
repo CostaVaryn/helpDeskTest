@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import readProperties.ConfigProvider;
 
 public class MainPage extends BaseSeleniumPage {
+    
     @FindBy(xpath = "//select[@id='id_queue']")
     private WebElement queueList;
 
