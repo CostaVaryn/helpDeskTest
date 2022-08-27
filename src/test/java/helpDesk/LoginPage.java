@@ -23,5 +23,4 @@ public class LoginPage extends BaseSeleniumPage {
         passwordField.sendKeys(password, Keys.ENTER);
         return new TicketsPage();
     }
-
 }
