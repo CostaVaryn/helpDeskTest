@@ -20,15 +20,15 @@ public class TicketPage extends BaseSeleniumPage {
         PageFactory.initElements(driver,this);
     }
 
-    public String getEmail(){
+    public String getEmail() {
         return email.getText();
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title.getText();
     }
 
-    public String getBody(){
+    public String getBody() {
         return body.getText();
     }
 }
