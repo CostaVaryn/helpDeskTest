@@ -20,7 +20,7 @@ public class TicketsPage extends BaseSeleniumPage {
         PageFactory.initElements(driver, this);
     }
 
-    public TicketPage findTicket(String str){
+    public TicketPage findTicket(String str) {
         searchField.sendKeys(str, Keys.ENTER);
         ticket.click();
         return new TicketPage();
