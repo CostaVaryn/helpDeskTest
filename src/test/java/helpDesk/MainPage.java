@@ -41,7 +41,7 @@ public class MainPage extends BaseSeleniumPage {
         PageFactory.initElements(driver, this);
     }
 
-    public MainPage createTicket(String titleValue, String bodyValue, String emailValue){
+    public MainPage createTicket(String titleValue, String bodyValue, String emailValue) {
         queueList.click();
         queueValue.click();
         title.sendKeys(titleValue);
