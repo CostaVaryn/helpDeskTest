@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BaseSeleniumPage {
+    
     @FindBy (id = "username")
     private WebElement loginField;
 
@@ -17,10 +18,9 @@ public class LoginPage extends BaseSeleniumPage {
         PageFactory.initElements(driver,this);
     }
 
-    public TicketsPage auth(String login, String password){
+    public TicketsPage auth(String login, String password) {
         loginField.sendKeys(login);
         passwordField.sendKeys(password, Keys.ENTER);
         return new TicketsPage();
     }
-
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import readProperties.ConfigProvider;
 
 public class MainPage extends BaseSeleniumPage {
+    
     @FindBy(xpath = "//select[@id='id_queue']")
     private WebElement queueList;
 
@@ -40,7 +41,7 @@ public class MainPage extends BaseSeleniumPage {
         PageFactory.initElements(driver, this);
     }
 
-    public MainPage createTicket(String titleValue, String bodyValue, String emailValue){
+    public MainPage createTicket(String titleValue, String bodyValue, String emailValue) {
         queueList.click();
         queueValue.click();
         title.sendKeys(titleValue);
@@ -55,6 +56,5 @@ public class MainPage extends BaseSeleniumPage {
     public LoginPage openLoginPage() {
         loginButton.click();
         return new LoginPage();
-
     }
 }

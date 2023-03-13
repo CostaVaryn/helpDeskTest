@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class TicketPage extends BaseSeleniumPage {
+    
     @FindBy(xpath = "//th[text()='Submitter E-Mail']/following::td[1]")
     private WebElement email;
 
@@ -19,15 +20,15 @@ public class TicketPage extends BaseSeleniumPage {
         PageFactory.initElements(driver,this);
     }
 
-    public String getEmail(){
+    public String getEmail() {
         return email.getText();
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title.getText();
     }
 
-    public String getBody(){
+    public String getBody() {
         return body.getText();
     }
 }
