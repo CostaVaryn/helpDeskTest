@@ -21,8 +21,8 @@ public class TicketsPage extends BaseSeleniumPage {
     }
 
     public TicketPage findTicket(String str) {
-        searchField.sendKeys(str, Keys.ENTER);
-        ticket.click();
+        this.searchField.sendKeys(str, Keys.ENTER);
+        this.ticket.click();
         return new TicketPage();
     }
 }

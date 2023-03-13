@@ -54,7 +54,7 @@ public class MainPage extends BaseSeleniumPage {
     }
 
     public LoginPage openLoginPage() {
-        loginButton.click();
+        this.loginButton.click();
         return new LoginPage();
     }
 }

@@ -7,6 +7,7 @@ import org.junit.Test;
 import readProperties.ConfigProvider;
 
 import static helpers.StringModifier.getUniqueString;
+import static org.junit.jupiter.api.Assertions.assertAll;
 
 public class HelpDeskTest extends BaseSeleniumTest {
 
@@ -17,8 +18,10 @@ public class HelpDeskTest extends BaseSeleniumTest {
                 .openLoginPage()
                 .auth(ConfigProvider.DEMO_LOGIN, ConfigProvider.DEMO_PASSWORD)
                 .findTicket(title);
-        Assert.assertTrue(ticketPage.getTitle().contains(title));
-        Assert.assertEquals(ticketPage.getBody(), TestValues.TEST_BODY);
-        Assert.assertEquals(ticketPage.getEmail(), TestValues.TEST_EMAIL);
+        assertAll(
+                () -> Assert.assertTrue(ticketPage.getTitle().contains(title)),
+                () -> Assert.assertEquals(ticketPage.getBody(), TestValues.TEST_BODY),
+                () -> Assert.assertEquals(ticketPage.getEmail(), TestValues.TEST_EMAIL)
+        );
     }
 }

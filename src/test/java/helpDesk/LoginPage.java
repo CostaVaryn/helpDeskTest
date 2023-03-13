@@ -19,8 +19,8 @@ public class LoginPage extends BaseSeleniumPage {
     }
 
     public TicketsPage auth(String login, String password) {
-        loginField.sendKeys(login);
-        passwordField.sendKeys(password, Keys.ENTER);
+        this.loginField.sendKeys(login);
+        this.passwordField.sendKeys(password, Keys.ENTER);
         return new TicketsPage();
     }
 }
