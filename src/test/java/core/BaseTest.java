@@ -6,13 +6,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
-// Базовый класс для инициализации селенида
-
 abstract public class BaseTest {
-
-    // Инициализация selenide с настройками
-
-    public void setUp(){
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
@@ -20,17 +15,13 @@ abstract public class BaseTest {
         Configuration.headless = false;
     }
 
-    // Выполнение метода перед каждым запуском тестов
-
     @BeforeEach
-    public void init(){
+    public void init() {
         setUp();
     }
 
-    // Выполнение метода после каждого закрытия тестов
-
     @AfterEach
-    public void tearDown(){
+    public void tearDown() {
         Selenide.closeWebDriver();
     }
 }
