@@ -12,7 +12,7 @@ abstract public class BaseSeleniumTest {
     protected WebDriver driver;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -22,10 +22,8 @@ abstract public class BaseSeleniumTest {
     }
 
     @After
-    public void tearDown(){
-        // close chrome driver
+    public void tearDown() {
         driver.close();
-        // quit chrome browser
         driver.quit();
     }
 }
